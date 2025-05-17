@@ -2,30 +2,77 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Assistant Vocal</title>
   <style>
     body {
-      font-family: sans-serif;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #04aef9, #00f2fe);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
       text-align: center;
-      padding: 40px;
-      background-color: #f0f0f0;
     }
+
     h1 {
-      color: #333;
+      font-size: 3em;
+      margin-bottom: 0.2em;
     }
+
     p {
       max-width: 600px;
-      margin: auto;
+      font-size: 1.2em;
+      margin-bottom: 2em;
     }
-    a {
-      color: #0066cc;
+
+    .button {
+      background-color: #fff;
+      color: #007acc;
+      border: none;
+      border-radius: 30px;
+      padding: 15px 30px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      margin: 0.5em;
+    }
+
+    .button:hover {
+      background-color: #e0f7ff;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+        padding: 0 20px;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Assistant Vocal</h1>
-  <p>Bienvenue sur l'assistant vocal personnel. Cette application permet aux utilisateurs de gérer leurs tâches via la voix et de les synchroniser automatiquement avec leur Google Calendar.</p>
-  <p>Les données personnelles sont utilisées uniquement pour offrir les fonctionnalités principales, comme la reconnaissance vocale, l'identification par email et la synchronisation avec le calendrier.</p>
-  <p><a href="https://docs.google.com/document/d/1D-4RUpv7hVqYDK7obJAwg4FGt-cbMuitkPRdK3v2bGw/edit?tab=t.0" target="_blank">Lire la politique de confidentialité</a></p>
+  <p>Bienvenue ! Cet assistant vocal vous permet de gérer vos tâches par la voix, et les synchroniser avec votre Google Calendar.</p>
+
+  <a href="https://calendar.google.com" class="button" target="_blank">Ouvrir Google Calendar</a>
+  <a href="https://docs.google.com/document/d/1D-4RUpv7hVqYDK7obJAwg4FGt-cbMuitkPRdK3v2bGw/edit?tab=t.0" class="button">Politique de Confidentialité</a>
+
+  <footer>
+    &copy; 2025 - Assistant Vocal personnel. Tous droits réservés.
+  </footer>
 </body>
 </html>
